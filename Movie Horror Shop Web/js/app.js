@@ -1,7 +1,7 @@
 let btnMenu = document.querySelector('.btn-menu');
 let menu = document.querySelector('.list-container');
 let containerMenu = document.querySelector('.menu');
-let activador = true; 
+let activador = true;
 
 //**Menu de Navegación - Animación */
 
@@ -9,18 +9,18 @@ btnMenu.addEventListener('click', () => {
 
     document.querySelector('.btn-menu i').classList.toggle('fa-times');
 
-    if(activador){
+    if (activador) {
         menu.style.left = "0";
         menu.style.transition = "0.5s";
 
         activador = false;
 
-    }else{
-         activador = false;
-     menu.style.left = "-100%";
-     menu.style.transition = "0.5s";
-    
-     activador = true; 
+    } else {
+        activador = false;
+        menu.style.left = "-100%";
+        menu.style.transition = "0.5s";
+
+        activador = true;
 
     }
 });
@@ -28,17 +28,17 @@ btnMenu.addEventListener('click', () => {
 //* intercalar clase Active /
 let enlaces = document.querySelectorAll('.list li a');
 
-enlaces.forEach( (element) => {
+enlaces.forEach((element) => {
 
- element.addEventListener('click', (event) => {
+    element.addEventListener('click', (event) => {
 
-    enlaces.array.forEach( (link) => {
-        link.classList.remove('activo');
+        enlaces.array.forEach((link) => {
+            link.classList.remove('activo');
+        });
+
+        event.target.classList.add('activo');
+
     });
-
-    event.target.classList.add('activo');
-
- });
 
 });
 
@@ -52,14 +52,14 @@ window.onscroll = () => {
     let currenScrollPos = window.pageYOffset;
 
     //Mostrar y ocultar menu
-    if(prevScrollpost > currenScrollPos){
+    if (prevScrollpost > currenScrollPos) {
         containerMenu.style.top = "0";
         containerMenu.style.transition = "0.5s";
 
-    }else{
+    } else {
         containerMenu.style.top = "-60";
         containerMenu.style.transition = "0.5s";
-    }   
+    }
 
     prevScrollpost = currenScrollPos;
 
@@ -72,10 +72,10 @@ window.onscroll = () => {
 
         goTop.style.right = "-100%";
 
-    }else{
+    } else {
         containerMenu.style.borderBottom = "2px solid #ff2e63"
 
-        goTop.style.right = "0";   
+        goTop.style.right = "0";
         goTop.style.transition = "0.5s";
     }
 }
@@ -92,3 +92,15 @@ verAbajo.addEventListener('click', () => {
     document.body.scrollTop = 600;
     document.documentElement.scrollTop = 600;
 });
+
+function addFavoritos() {
+    var x = document.getElementById("snackbar");
+    x.className = "show";
+    setTimeout(function () { x.className = x.className.replace("show", ""); }, 3000);
+}
+
+function addCarrito() {
+    var x = document.getElementById("snackbarCarrito");
+    x.className = "show";
+    setTimeout(function () { x.className = x.className.replace("show", ""); }, 3000);
+}
