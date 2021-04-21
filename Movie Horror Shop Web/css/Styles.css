@@ -39,6 +39,11 @@ body{
     transition: 400ms;
 }
 
+.fixeado{
+    left: 0 !important;
+    right: 0 !important;
+    height: 150px !important;
+}
 .go-top:hover{
     border:2px solid var(--white);
     background:var(--red);
