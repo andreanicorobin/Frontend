@@ -1,5 +1,9 @@
+.carrusel-inner {
+    height: 500px;
+}
+
 .carousel-item img {
-    margin-top: 30px;
+    margin-top: 10px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -10,8 +14,8 @@
     margin-right: auto;
     margin-left: auto;    
     margin-top: 30px;
-    width: 50%;
-    height: 100px;
+    width: 35%;
+    height: 90px;
     background-color:rgba(255,255,255.255,0.5);
     position: relative;
     color: seashell;

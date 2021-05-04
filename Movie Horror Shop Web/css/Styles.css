@@ -226,20 +226,7 @@ body{
     line-height: 35px;
     margin: 10px 0px;
 }
-/*.acerca-de .info-container .about-gallery{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin: 50px 0px;
-}
-.acerca-de .info-container .about-gallery img{
-    width: calc(33.33% - 10px);
-    height: 300px;
-    object-fit: cover;
-    margin: 10px 10px;
-    border-radius: 10px;
-    cursor: pointer;
-}*/
+
 .acerca-de .info-container .about-more{
     width: 100%;
     display: flex;
@@ -570,23 +557,7 @@ body{
     }
 } 
 
-/*@media only screen and (max-width: 890px){
-    .testimonios .box-testimonios .card-testimonio .card-img img{
-        width: 200px;
-        height: 200px;
-    }
-    .testimonios .box-testimonios .card-testimonio {
-        width: 100%;
-    }
-    .testimonios .box-testimonios .card-testimonio .testimonio-text h4{
-        font-size: 25px;
-    }
-    .testimonios .box-testimonios .card-testimonio .testimonio-text p{
-        font-size: 17px;
-        line-height: 35px;
-    }
-}
-*/
+
 @media only screen and (max-width: 900px){
     .footer .formulario-content{
         width: 85%;
