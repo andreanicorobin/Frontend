@@ -15,11 +15,16 @@
     margin-left: auto;    
     margin-top: 30px;
     width: 35%;
-    height: 90px;
     background-color:rgba(255,255,255.255,0.5);
     position: relative;
     color: seashell;
+    left: 0 !important;
+    right: 0 !important;
+    height: 150px !important;
 }
 .carousel-caption h5{
     color: red;
+}
+.carousel-fixed{
+    padding-bottom: 10%;
 }
