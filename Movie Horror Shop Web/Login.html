@@ -22,17 +22,51 @@
             <div class="list-container">
                 <ul class="lists">
                     <li><a href="./Index.html" >Inicio</a></li>
-                    <li><a href="./proximamente.html">Proximamente</a></li>
                     <li><a href="./catalogo.html">Catálogo</a></li>
-                    <li><a href="./Contacto.html">Contacto</a></li>
-                    <li><a href="./ayuda.html">Ayuda</a></li>
                     <li><a href="./Login.html" class="activo">Iniciar sesión</a></li>
                 </ul>
             </div>
         </nav>
      </header>
-<!--Main-->
-<main class="footer">
+
+     <!--Iniciar Sesión-->
+<main>
+    <div class="contenedor_todo">
+        <div class="caja__trasera">
+            <div class="caja__trasera-login">
+                <h3>¿Ya tienes una cuenta?</h3>
+                <p>Inicia Sesión para ingresar</p>
+                <button id="btn_iniciar-sesion">Iniciar Sesión</button>
+            </div>
+            <div class="caja__trasera-register">
+                <h3>¿Aún no estás registrado?</h3>
+                <p>Registrarse</p>
+                <button id="btn_registrarse">Registrarse</button>
+            </div>
+        </div>
+        <!--Formulario Login y Registro-->
+        <div class="contenedor__login-register">
+            <!--Login-->
+            <form action="" class="formulario__login">
+                <h2>Iniciar Sesión</h2>
+                <input type="text" placeholder="Correo Electronico">
+                <input type="password" placeholder="Contraseña">
+                <button>Ingresar</button> 
+            </form>
+    
+            <!--Registro-->
+            <form action="" class="formulario-register">
+                <h2>Registrarse</h2>
+                <input type="text" placeholder="Nombre Completo">
+                <input type="text" placeholder="Correo Electrónico">
+                <input type="text" placeholder="Usuario">
+                <input pass="Contraseña" placeholder="Contraseña">
+                <button>Registrarse</button>
+            </form>
+        </div>
+    </div>
+
+<!--<main class="footer">
     <div class="skew-arriba"></div>
     <div class="deg-footer"></div>
     <div class="ejeZfooter">
@@ -51,18 +85,7 @@
          </form>
         </div>
         <!--- Connect -->
-        <div class="row text-center padding">
-            <div class="con-title">
-                <h2>Ingresa con</h2>
-            </div>
-            <div class="social">
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-google-plus-g"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
-            </div>
-        </div>       
+       
         <div class="footer-text">
             <p>&copy; Movie Horro Shop - 2021| Todos los derechos reservados</p>
         </div>
@@ -72,5 +95,6 @@
 </main>
         <script src="https://kit.fontawesome.com/ca6e14d7f4.js" crossorigin="anonymous"></script>
         <script src="js/app.js"></script>
+        <script src="js/login.js"></script>
     </body>
 </html>
